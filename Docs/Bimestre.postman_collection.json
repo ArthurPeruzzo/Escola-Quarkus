@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "1f10251b-763a-4f17-bb82-a4398d045b6b",
+		"name": "Bimestre",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar um bimestre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/avaliacao/cadastroBimestre"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar bimestre por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/buscarBimestrePorId/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar bimestres por data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/listarBimestresPorData"
+			},
+			"response": []
+		},
+		{
+			"name": "Total de dias letivos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/totalDeDiasLetivos"
+			},
+			"response": []
+		},
+		{
+			"name": "Dias letivos de um bimestre por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/diasLetivosDeUmBimestre/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar bimestre por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/deletarBimestre/"
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar bimestre",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/atualizarBimestre"
+			},
+			"response": []
+		},
+		{
+			"name": "Nota das avaliações por bimestre; matricula/bimestre como parametro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/bimestres/notaDasAvaliacoesPorBimestre/99332737/4"
+			},
+			"response": []
+		}
+	]
+}

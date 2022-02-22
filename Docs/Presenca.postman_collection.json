@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "89bc13c0-df99-4a51-9fae-a63224a4444b",
+		"name": "Presenca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar uma presença",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numeroDeFaltas\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/presenca/cadastroPresenca"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar presença por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/presenca/buscarPresenca/17"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar presença por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/presenca/deletarPresenca/17"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar presença",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar faltas de um aluno ple matricula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/presenca/faltasDoAluno/99332737"
+			},
+			"response": []
+		},
+		{
+			"name": "Total de faltas de um aluno pela matricula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/presenca/totalDefaltasDoAluno/99332737"
+			},
+			"response": []
+		}
+	]
+}

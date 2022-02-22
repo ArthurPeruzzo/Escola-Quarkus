@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "b21eca06-8e58-48cb-96a5-e992a492cb6c",
+		"name": "TipoAvaliacao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar TipoAvaliacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeAvaliacao\": \"trabalho em equipe\",\n    \"pesoAvaliacao\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tipoAvaliacao/cadastroTipoAvaliacao"
+			},
+			"response": []
+		},
+		{
+			"name": "buscar TipoAvaliacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/tipoAvaliacao/buscarTipoAvaliacao/25"
+			},
+			"response": []
+		},
+		{
+			"name": "deletar TipoAvaliacao",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/tipoAvaliacao/deletarTipoAvaliacao/24"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar TipoAvaliacao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"id\": 25,\n    \"nomeAvaliacao\": \"trabalho individual\",\n    \"pesoAvaliacao\": 5.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tipoAvaliacao/atualizarTipoAvaliacao"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "d5b76e89-d27b-4269-bb30-040b207e5965",
+		"name": "Aluno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar Aluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"matricula\": 33333,\n    \"nome\": \"arthur\",\n    \"email\": \"arthur@gmail.com\",\n    \"telefone\": \"1321321-32\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/alunos/cadastroAluno"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar aluno por matricula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alunos/buscarAlunoPorMatricula/99332737"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar todos os alunos cadastrados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alunos/buscarTodosAlunos"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar aluno por caractere (buscar pelo nome)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alunos/pesquisarAlunosPorCaractere/o"
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar um aluno pela matrícula",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/alunos/deletarAluno/33333"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dados de um aluno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"matricula\": 33333,\n    \"nome\": \"arthur Kohl\",\n    \"email\": \"arthur@gmail.com\",\n    \"telefone\": \"1321321-32\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/alunos/atualizarDadosAluno"
+			},
+			"response": []
+		},
+		{
+			"name": "Média final de um aluno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alunos/mediaFinalAluno/99332737"
+			},
+			"response": []
+		},
+		{
+			"name": "Média final de um aluno em cada bimestre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alunos/mediaFinalDeUmAlunoEmCadaBimestre/99332737"
+			},
+			"response": []
+		},
+		{
+			"name": "Situação final de um aluno através da matricula (reprovado, aprovado ou recuperação)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/alunos/situacaoFinalDoAluno/22553434"
+			},
+			"response": []
+		}
+	]
+}
